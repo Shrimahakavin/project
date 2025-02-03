@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>porgne</title>
+  <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+  <header>
+    <h1>Healthify</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="bmi-btn">BMI Calculator</a></li>
+        <li><a href="#" id="calorie-btn">Calorie Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="bmi-section">
+      <div class="form-container">
+        <p><center><b>BMI CALCULATOR</b></center></p>
+        <form id="bmiForm">
+          <label for="age">Age (in years):</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age" min="0" required>
+          
+          <label for="height">Height (in cm):</label>
+          <input type="number" id="height" name="height" placeholder="Enter your height" min="0" required>
+          
+          <label for="weight">Weight (in kg):</label>
+          <input type="number" id="weight" name="weight" placeholder="Enter your weight" min="0" required>
+          
+          <div class="button-container">
+            <input type="submit" value="Calculate BMI">
+          </div>
+        </form>
+        <p id="bmi-result"></p> <!-- Display BMI result here -->
+        <div id="diet-check-container" style="display: none;">
+          <button id="check-diet-btn">Check for Diet Plans</button>
+        </div>
+      </div>
+    </section>
+    <section id="calorie-section" style="display: none;">
+      <div class="form-container">
+        <p><center><b>CALORIE CALCULATOR</b></center></p>
+        <p>Feature coming soon...</p>
+      </div>
+    </section>
+
+    <!-- Diet or Exercise Plan Form (Hidden Initially) -->
+    <section id="plan-selection-form" class="form-container" style="display: none;">
+      <p><b>Select Your Plan</b></p>
+      <form id="planForm">
+        <label for="plan-choice">Do you need a Diet Plan or Exercise Plan?</label>
+        <select id="plan-choice" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="diet">Diet Plan</option>
+          <option value="exercise">Exercise Plan</option>
+        </select>
+        <div id="meal-selection" style="display: none;">
+          <label for="meal-choice">Choose your meal:</label>
+          <select id="meal-choice">
+            <option value="" disabled selected>Select a meal</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="snacks">Snacks</option>
+            <option value="dinner">Dinner</option>
+          </select>
+        </div>
+        <div class="button-container">
+          <button type="submit">Go to Plan</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="calorie-section" style="display: none;">
+      <div class="form-container">
+        <p><center><b>CALORIE CALCULATOR</b></center></p>
+        <p>Feature coming soon...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Awesome Website. All rights reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+  background-image: url('Untitled design (1).png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px); /* Soft glass effect */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #222; /* Darker color for better contrast */
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+  background: darkblue;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Soft white with transparency */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  margin: 30px auto;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+  transform: scale(1.02); /* Subtle hover effect */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333; /* Darker text for better readability */
+}
+
+input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="number"]:focus, select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button, input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+  margin: 30px 0;
+  font-size: 14px;
+}

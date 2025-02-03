@@ -1,0 +1,237 @@
+body {
+    background-image: url('Untitled design (1).png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#breakfast {
+    margin-top: 100px;
+}
+header {
+    color: white;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+header h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav {
+    margin-left: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    position: relative;
+}
+nav ul li a:hover {
+    color: #045292;
+}
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f1c40f;
+    display: block;
+    margin-top: 2px;
+    transition: width 0.3s ease-in-out;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.meal-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    flex-grow: 1;
+}
+.section-container {
+    width: 90%;
+    background: rgba(255, 254, 254, 0.2);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+.section-container:hover {
+    transform: scale(1.02);
+}
+#lunch .section-container {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+#snack .section-container {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.section-title {
+    color: rgb(255, 248, 248);
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.meal-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+.meal {
+    background: rgba(255, 255, 255,1);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+#lunch .meal {
+    background: rgba(255, 255, 255, 0.9);
+    color: rgb(12, 12, 12);
+}
+#snack .meal {
+    background: rgba(255, 255, 255, 1);
+    color: rgb(16, 15, 15);
+}
+.meal:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+.meal h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.recipe-content {
+    display: none;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+}
+button {
+    padding: 12px 18px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+.footer-links {
+    margin-top: 10px;
+}
+.footer-links a {
+    color: #f1c40f;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+/* Optional: Social Media Icons */
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons i:hover {
+    transform: scale(1.2);
+    color: #f1c40f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .section-container {
+        width: 95%;
+    }
+
+    .meal {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

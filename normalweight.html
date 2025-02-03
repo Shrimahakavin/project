@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Diet Plan</h1>
+        <nav>
+            <ul>
+                <li><a href="#exercise">Exercise</a></li>
+                <li><a href="#breakfast">Breakfast</a></li>
+                <li><a href="#lunch">Lunch</a></li>
+                <li><a href="#dinner">Dinner</a></li>
+                <li><a href="#snack">Snack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="breakfast" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Breakfast</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Poha</h3>
+                        <button onclick="showRecipe('poha')">Recipe</button>
+                        <div id="poha-recipe" class="recipe-content"></div>
+                    </div>
+                    <div class="meal">
+                        <h3>Oats Porridge</h3>
+                        <button onclick="showRecipe('oats')">Recipe</button>
+                        <div id="oats-recipe" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lunch" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title" style="color:white">Lunch</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Brown Rice & Sambar</h3>
+                        <button onclick="showRecipe('sambar')">Recipe</button>
+                        <div id="sambar-recipe" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dinner" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Dinner</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Roti & Vegetable Curry</h3>
+                        <button onclick="showRecipe('roti')">Recipe</button>
+                        <div id="roti-recipe" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="snack" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Snacks</h2>
+                <div class="meal-container">
+                    <div class="meal">
+                        <h3>Green Tea & Chickpeas</h3>
+                        <button onclick="showRecipe('tea')">Recipe</button>
+                        <div id="tea-recipe" class="recipe-content"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="exercise" class="meal-section">
+            <div class="section-container">
+                <h2 class="section-title">Exercise Plan</h2>
+                <p>Exercise plan will come shortly.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
